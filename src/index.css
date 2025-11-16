@@ -1,9 +1,21 @@
+body {
+  background: #20002c;
+  background: -webkit-linear-gradient(to right, #cbb4d4, #20002c);
+  background: linear-gradient(to right, #cbb4d4, #20002c);
+  padding: 0;
+  margin: 0;
+}
+
+
+
+/* nav bar */
+
 .navBar {
   margin-top: 3em;
   display: flex;
   gap: 5em;
-  background-color: white;
   justify-content: center;
+  background-color: #20002ce6;
 }
 
 .logo {
@@ -16,7 +28,7 @@
   font-family: monospace;
   font-weight: 700;
   font-size: 30px;
-  color: rgb(19, 26, 23);
+  color: rgb(255, 255, 255);
 }
 
 .logo img {
@@ -32,16 +44,54 @@
 }
 
 .link {
-  background-color: rgb(9, 74, 165);
+  background-color: rgb(100, 96, 135);
   padding: 5px 30px;
   transform: skewX(-20deg);
   color: white;
   cursor: pointer;
+  border: solid 3px rgba(255, 255, 255, 0);
+  box-shadow: 3px 4px 1px rgba(51, 203, 249, 0);
+
 }
 
 .link:hover {
   background-color: #333;
+  color: rgb(51, 203, 249);
   border: solid 3px rgb(255, 255, 255);
-  color: rgb(92, 247, 255);
-  box-shadow: 3px 4px 1px rgb(25, 148, 255,0.686);
+  box-shadow: 3px 4px 1px rgba(51, 203, 249, 0.781);
+  font-weight: 700;
+}
+
+
+
+
+/* welcome  */
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10em 20em;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.welcome_title {
+  text-align: center;
+  color: rgb(234, 171, 255);
+  font-size: 25px;
+  width: 100%;
+  margin: 0;
+}
+
+.welcome_title::after {
+  content: '';
+  display: block;
+  border-bottom: solid #20002c46;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.welcome_text {
+  font-weight: lighter;
 }
