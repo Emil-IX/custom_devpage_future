@@ -7,10 +7,11 @@ const ImageSection = () => {
             <div className="ImageSection_texts appearleft">
                 <h3>Software services</h3>
                 <ul>
-                    <li>The standard chunk of Lorem Ipsum used.</li>
-                    <li>the 1500s is reproduced below for those interested.</li>
-                    <li>Finibus Bonorum et Malorum" by Cicero.</li>
-                    <li>English versions from the 1914 translation by H. Rackham.</li>
+                    <li>Specialists in web and application development</li>
+                    <li>Creation with different architectures such as client-server, monolithic, MVC, events, etc.</li>
+                    <li>Maintenance and support with servers and version control</li>
+                    <li>Quality assurance and quality control</li>
+                    <li>Deployment and hosting</li>
                 </ul>
             </div>
         </div>

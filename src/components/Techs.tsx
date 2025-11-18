@@ -90,7 +90,13 @@ function Techs() {
 
     return (
         <div className="techContiner">
-            <h2 className="tech_title appearright">Tech Stack</h2>
+            <div className="tech_title--container">
+                <h2 className="tech_title appearright">Tech Stack</h2>
+                <p className=" appear">
+                    As a software engineer, I have several tools and technologies that help me perform my work every day
+                </p>
+
+            </div>
             <div className="techContent">
                 {data.map((tech, index) =>
                     <div className="tech_card appearScale" key={index + 1} >
