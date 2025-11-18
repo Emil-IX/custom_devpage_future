@@ -183,7 +183,7 @@ body {
 }
 
 .ImageSection_texts ul li {
-  list-style-type:none ;
+  list-style-type: none;
   margin-top: 5px;
   font-weight: 700;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -195,11 +195,28 @@ body {
   right: 25px;
   top: 18px;
   display: block;
-  background-color:  rgb(51, 203, 249);
+  background-color: rgb(51, 203, 249);
   width: 12px;
   height: 12px;
   border-radius: 50%;
 }
+
+.ImageSection_texts ul li:nth-child(2) {
+  animation-delay: 200ms;
+}
+
+.ImageSection_texts ul li:nth-child(3) {
+  animation-delay: 400ms;
+}
+
+.ImageSection_texts ul li:nth-child(4) {
+  animation-delay: 600ms;
+}
+
+.ImageSection_texts ul li:nth-child(5) {
+  animation-delay: 800ms;
+}
+
 
 
 
@@ -296,7 +313,7 @@ body {
 .appearleft {
   animation: appearleft linear;
   animation-timeline: view();
-  animation-range: entry 0 cover 60%;
+  animation-range: entry 0 cover 30%;
 }
 
 .appearright {
@@ -355,11 +372,13 @@ body {
   0% {
     opacity: 0;
     transform: translateX(-100px);
+    filter: blur(5px);
   }
 
   100% {
     opacity: 1;
     transform: translateX(0px);
+     filter: blur(0);
   }
 }
 
