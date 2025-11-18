@@ -3,14 +3,8 @@ body {
   background: -webkit-linear-gradient(to right, #cbb4d4, #20002c);
   background: linear-gradient(to right, #cbb4d4, #20002c); */
   background: #757F9A;
-  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #D7DDE8, #757F9A);
-  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #D7DDE8, #757F9A);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
-
 
   padding: 0;
   margin: 0;
@@ -18,15 +12,49 @@ body {
 }
 
 
+/* home */
+
+.homeContainer {
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url('/fondo2.jpg');
+  min-height: 750px;
+  width: 100%;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homeContent {
+  color: cyan;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 13px;
+  width: 50%;
+}
+
+.homeContent--text {
+  text-align: center;
+  font-size: 40px;
+  color: yellow;
+  font-weight: 700;
+}
+
+
 
 /* nav bar */
 
 .navBar {
-  margin-top: 3em;
+  padding-top: 2em;
   display: flex;
   gap: 5em;
   justify-content: center;
-  background-color: #0e0013e6;
+  background-color: #050013;
 }
 
 .logo {
@@ -84,7 +112,7 @@ body {
   flex-direction: column;
   align-items: center;
   margin: 5em 5em;
-  padding: 20em 5em;
+  padding: 15em 5em;
   color: white;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -131,7 +159,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
 
   display: flex;
   align-items: center;
@@ -213,6 +240,7 @@ body {
   box-shadow: 4px 5px 2px rgba(0, 0, 0, 0.482);
 }
 
+
 .tech_img img {
   width: 80px;
 }
@@ -221,4 +249,144 @@ body {
   font-family: 'Courier New', Courier, monospace;
   color: cyan;
   font-weight: 700;
+}
+
+
+
+
+/* animations */
+
+
+.appear {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 50%;
+}
+
+.appearScale {
+  animation: appearScale linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 30%;
+}
+
+.appearleft {
+  animation: appearleft linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 60%;
+}
+
+.appearright {
+  animation: appearright linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 55%;
+}
+
+.clickpath {
+  animation: clickpath linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 20%;
+}
+
+.fadeout {
+  animation: fadeout linear;
+  animation-timeline: view();
+  animation-range: exit -150px;
+
+}
+
+.fadeoutImge {
+  animation: fadeoutImge linear;
+  animation-timeline: view();
+  animation-range: exit -10px;
+
+}
+
+
+@keyframes appear {
+
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes appearScale {
+
+  0% {
+    opacity: 0;
+    scale: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@keyframes appearleft {
+
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes appearright {
+
+  0% {
+    opacity: 0;
+    transform: translateX(200px)
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+
+}
+
+@keyframes clickpath {
+
+  0% {
+    opacity: 0;
+    clip-path: inset(100% 100% 0 0);
+  }
+
+  100% {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes fadeout {
+
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+}
+
+@keyframes fadeoutImge {
+
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1.4);
+  }
 }

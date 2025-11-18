@@ -45,6 +45,10 @@ function Techs() {
             url: '/mysql.png'
         },
         {
+            name: 'SQL Server',
+            url: '/sqlserver.jpg'
+        },
+        {
             name: 'Oracle',
             url: '/oracle.webp'
         },
@@ -64,16 +68,32 @@ function Techs() {
             name: 'Jira',
             url: '/jira.png'
         },
+        {
+            name: 'Playwright',
+            url: '/playwright.svg'
+        },
+        {
+            name: 'Jest',
+            url: '/jest.png'
+        },
+        {
+            name: 'Postman',
+            url: '/postman.png'
+        },
+        {
+            name: 'Suagger',
+            url: '/suagger.png'
+        },
     ]
 
 
 
     return (
         <div className="techContiner">
-            <h2 className="tech_title">Tech Stack</h2>
+            <h2 className="tech_title appearright">Tech Stack</h2>
             <div className="techContent">
                 {data.map((tech, index) =>
-                    <div className="tech_card" key={index + 1} >
+                    <div className="tech_card appearScale" key={index + 1} >
                         <div className="tech_img">
                             <img src={tech.url} alt={tech.name} />
                         </div>

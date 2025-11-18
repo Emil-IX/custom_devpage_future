@@ -1,5 +1,4 @@
-import { Welcome, NavBar, ImageSection, Techs } from "./components"
-
+import { Welcome, NavBar, ImageSection, Techs, Home } from "./components"
 
 
 function App() {
@@ -7,6 +6,7 @@ function App() {
 
   return (
     <>
+      <Home />
       <NavBar />
       <Welcome />
       <ImageSection/>

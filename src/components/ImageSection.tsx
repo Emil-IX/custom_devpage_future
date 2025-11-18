@@ -4,7 +4,7 @@ const ImageSection = () => {
 
     return (
         <div className="ImageSection">
-            <div className="ImageSection_texts">
+            <div className="ImageSection_texts appearleft">
                 <h3>Software services</h3>
                 <ul>
                     <li>The standard chunk of Lorem Ipsum used.</li>
