@@ -1,4 +1,4 @@
-import { Welcome, NavBar, ImageSection } from "./components"
+import { Welcome, NavBar, ImageSection, Techs } from "./components"
 
 
 
@@ -10,6 +10,7 @@ function App() {
       <NavBar />
       <Welcome />
       <ImageSection/>
+      <Techs/>
     </>
   )
 }

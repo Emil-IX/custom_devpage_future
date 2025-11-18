@@ -1,7 +1,17 @@
 body {
-  background: #20002c;
+  /* background: #20002c;
   background: -webkit-linear-gradient(to right, #cbb4d4, #20002c);
-  background: linear-gradient(to right, #cbb4d4, #20002c);
+  background: linear-gradient(to right, #cbb4d4, #20002c); */
+  background: #757F9A;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #D7DDE8, #757F9A);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #D7DDE8, #757F9A);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+
   padding: 0;
   margin: 0;
 
@@ -73,39 +83,48 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10em 15em;
+  margin: 5em 5em;
+  padding: 20em 5em;
   color: white;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.welcome div {
+  position: relative;
+  bottom: 50px;
+  width: 60%;
+}
 
 
 .welcome_title {
   text-align: center;
-  color: rgb(234, 171, 255);
-  font-size: 25px;
+  color: rgb(31, 5, 75);
+  font-size: 55px;
   width: 100%;
   margin: 0;
+  margin-bottom: 22px;
 }
 
 .welcome_title::after {
   content: '';
   display: block;
-  border-bottom: solid #20002c46;
+  border-bottom: solid #6e058346;
   width: 100%;
   margin-top: 20px;
 }
 
 .welcome_text {
-  font-weight: lighter;
+  font-weight: 500;
+  color: #36384d;
+  line-height: 1.8em;
 }
 
 
 /* image section */
 .ImageSection {
   position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)) , url('/laptopimage.jpg');
-  min-height: 450px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url('/laptopimage.jpg');
+  min-height: 650px;
   width: 100%;
 
   background-attachment: fixed;
@@ -117,26 +136,89 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
 }
 
 .ImageSection_texts {
-  width: 30%;
+  width: 40%;
   color: white;
   align-items: center;
   padding: 20px;
   border-radius: 8px;
-  
+
 }
 
 .ImageSection_texts h3 {
+  color: rgb(51, 203, 249);
   text-align: center;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   font-size: 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
 }
 
 .ImageSection_texts ul li {
   margin-top: 10px;
   font-weight: 700;
   font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+
+
+
+/* techs */
+
+
+.techContiner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4em;
+  margin: 5em auto;
+  padding: 10em 5em;
+
+}
+
+.tech_title {
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(31, 5, 75);
+  font-size: 40px;
+  margin-bottom: 4em;
+}
+
+.techContent {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3em;
+  bottom: 50px;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.tech_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #333333;
+  width: 130px;
+  height: 170px;
+  padding: 7px 7px;
+  border-radius: 5px;
+  gap: 1px;
+  box-shadow: 4px 5px 2px rgba(0, 0, 0, 0.482);
+}
+
+.tech_img img {
+  width: 80px;
+}
+
+.tech_name {
+  font-family: 'Courier New', Courier, monospace;
+  color: cyan;
+  font-weight: 700;
 }
