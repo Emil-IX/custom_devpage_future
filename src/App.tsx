@@ -1,4 +1,5 @@
 import { Welcome, NavBar, ImageSection, Techs, Home } from "./components"
+import { About } from "./components/About"
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Welcome />
       <ImageSection/>
       <Techs/>
+      <About/>
     </>
   )
 }

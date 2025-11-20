@@ -1,0 +1,31 @@
+
+
+export const About = () => {
+
+
+    return (
+        <div className="aboutContainer">
+            <div className="aboutContainer_content">
+                <div className="about_texts">
+                    <h3>You might wonder who I am</h3>
+                    <p className="about_texts_main">
+                        Hello, my name is <span>Emil H. Espiritu</span> and I am a software engineer with several years of experience in the field. I specialize in both project-oriented software development and quality analysis.
+                    </p>
+
+                    <h3 className="ExperienceSummary">Experience summary</h3>
+                    <div className="experience">
+                        <p className="experiences">I have worked on airline projects in my country with ticketing systems</p>
+                        <p className="experiences">In appointment dispensers for laboratories in my country</p>
+                        <p className="experiences">In the country's toll payment systems</p>
+                        <p className="experiences">Container delivery system and fleet for famous institutions in the country</p>
+                        <p className="experiences">Remittance systems and banking business models at the national level</p>
+                    </div>
+                </div>
+                <div className="about_image">
+                    <img src="./recortada2.png" alt="Dev picture" />
+                </div>
+            </div>
+
+        </div>
+    )
+}

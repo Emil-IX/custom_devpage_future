@@ -295,6 +295,105 @@ body {
 
 
 
+
+/* about */
+
+.aboutContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4em;
+  margin: 5em auto;
+  padding: 15em 5em;
+  background-color: #010122;
+  position: relative;
+  z-index: 1;
+}
+
+.aboutContainer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: #010122;
+  opacity: 0.5;
+  background-image: radial-gradient(#45c6f7 0.5px, transparent 0.5px), radial-gradient(#45c6f7 0.5px, #010122 0.5px);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+}
+
+/* style 2
+.aboutContainer::before {
+  background-color: #010122;
+  opacity: 0.1;
+  background-image: linear-gradient(#45c6f7 1px, transparent 1px), linear-gradient(to right, #45c6f7 1px, #010122 1px);
+  background-size: 20px 20px;
+}
+ */
+.aboutContainer_content {
+  display: flex;
+  gap: 3em;
+  width: 70%;
+  padding: 20px 30px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  /*  background-color: #010122; */
+  border: 4px solid #361da622;
+  ;
+  border-radius: 5px;
+  background-color: rgba(7, 66, 113, 0.14);
+
+}
+
+
+.about_image img {
+  width: 350px;
+  border: 7px solid white;
+}
+
+
+.about_texts p {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.about_texts_main {
+  line-height: 2em;
+}
+
+.about_texts h3 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(51, 203, 249);
+  font-weight: 700;
+
+}
+
+.about_texts .ExperienceSummary::after {
+  content: '';
+  display: block;
+  border: 2px solid;
+  color: #361da642;
+  margin-top: 5px;
+}
+
+.about_texts p span {
+  color: rgb(255, 238, 0);
+}
+
+.about_texts .experience {
+  /*  background-color: rgba(7, 66, 113, 0.14); */
+  border-radius: 5px;
+  padding: 4px 10px;
+}
+
+
+
+
 /* animations */
 
 
@@ -313,7 +412,7 @@ body {
 .appearleft {
   animation: appearleft linear;
   animation-timeline: view();
-  animation-range: entry 0 cover 30%;
+  animation-range: entry 0 cover 50%;
 }
 
 .appearright {
@@ -378,7 +477,7 @@ body {
   100% {
     opacity: 1;
     transform: translateX(0px);
-     filter: blur(0);
+    filter: blur(0);
   }
 }
 
