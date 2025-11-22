@@ -1,5 +1,5 @@
-import { Welcome, NavBar, ImageSection, Techs, Home } from "./components"
-import { About } from "./components/About"
+import { Welcome, NavBar, ImageSection, Techs, Home, About } from "./components"
+
 
 
 function App() {
