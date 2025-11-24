@@ -1,9 +1,18 @@
-import { Welcome, NavBar, ImageSection, Techs, Home, About } from "./components"
+import { 
+  Welcome, 
+  NavBar, 
+  ImageSection, 
+  Techs, 
+  Home, 
+  About, 
+  Footer 
+} from "./components"
 
 
 
 function App() {
 
+  Footer
 
   return (
     <>
@@ -13,6 +22,7 @@ function App() {
       <ImageSection/>
       <Techs/>
       <About/>
+      <Footer/>
     </>
   )
 }

@@ -10,9 +10,9 @@ const About = () => {
                     <h3 className="title-content">
                         <ol>
                             <li><span>You might be wondering who I am</span></li>
-                            <li><span className="si">I'm Software Ingenier</span></li>
-                            <li><span className="wb">I'm Web Developer</span></li>
-                            <li><span className="qa">I'm Quality Asurance</span></li>
+                            <li><span className="si">I'm a Software Engineer</span></li>
+                            <li><span className="wb">I'm a Web Developer</span></li>
+                            <li><span className="qa">I'm a Quality Assurance Engineer</span></li>
                             <li><span className="hp">I can be your solution</span></li>
                         </ol>
                     </h3>
