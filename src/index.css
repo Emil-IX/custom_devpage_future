@@ -28,6 +28,7 @@ body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url('/fondo2.jpg');
   min-height: 750px;
   width: 100%;
+  overflow: hidden;
 
   background-attachment: fixed;
   background-position: center;
@@ -61,6 +62,7 @@ body {
 .navBar {
   padding-top: 2em;
   display: flex;
+  flex-wrap: nowrap;
   gap: 5em;
   justify-content: center;
   background-color: #050013;
@@ -100,7 +102,7 @@ body {
   cursor: pointer;
   border: solid 3px rgba(255, 255, 255, 0);
   box-shadow: 3px 4px 1px rgba(51, 203, 249, 0);
-    text-decoration: none;
+  text-decoration: none;
 
 }
 
@@ -368,7 +370,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 70%;
+  width: 700px;
   height: auto;
 }
 
@@ -379,10 +381,17 @@ body {
   border: 7px solid white;
 }
 
+.about_texts {
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+}
+
 
 .about_texts p {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
+
 }
 
 .about_texts_main {
@@ -538,6 +547,7 @@ body {
   background-color: #050013;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   box-shadow: 4px 5px 2px rgba(0, 0, 0, 0.482);
+  overflow-wrap: break-word;
 }
 
 .pro_element::before {
@@ -589,7 +599,7 @@ body {
   position: absolute;
   left: 0;
   bottom: -5px;
-  width: min(100%,120px);
+  width: min(100%, 120px);
   height: 2px;
   border-bottom: 2px dashed aliceblue;
 }
@@ -627,13 +637,14 @@ footer {
   margin: 0;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .footerContent {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   gap: 4em;
   padding: 5em;
@@ -645,8 +656,10 @@ footer {
 
 .textsFooter {
   color: white;
-  width: 20%;
 }
+
+
+
 
 .icons {
   display: flex;
@@ -656,11 +669,12 @@ footer {
   justify-content: center;
 }
 
-.ink{
+.ink {
   width: 35px;
   cursor: pointer;
 }
-.git{
+
+.git {
   width: 48px;
   cursor: pointer;
 
@@ -682,6 +696,7 @@ footer {
   padding: 5px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .email button {
   background-color: #0ab9ff;
   width: 60px;
@@ -697,8 +712,9 @@ footer {
 
 .footerLinks {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   gap: 7px;
+  margin: 0;
 }
 
 .footerLinks a {
@@ -727,6 +743,7 @@ footer {
   animation-timeline: view();
   animation-range: entry 0 cover 35%;
 }
+
 .appearleft2 {
   animation: appearleft2 linear;
   animation-timeline: view();
@@ -860,7 +877,7 @@ footer {
 
   100% {
     opacity: 0;
-    transform: scale(1.4);
+    /*  transform: scale(1.4); */
   }
 }
 
@@ -926,5 +943,68 @@ footer {
 @keyframes rotate {
   to {
     --angle: 360deg;
+  }
+}
+
+
+
+
+/* medias */
+
+@media (max-width: 1300px) {
+  .aboutContainer_content {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about_image {
+    margin-top: 4em;
+    width: 70%;
+  }
+
+  .about_image img {
+    width: 70%;
+  }
+
+  .title-content ol li span {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 830px) {
+  .navBar {
+    flex-wrap: wrap;
+    ;
+  }
+
+  .links {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2em
+  }
+}
+
+@media (max-width: 720px) {
+  .title-content ol li span {
+    font-size: 12px;
+  }
+
+  .welcome div {
+
+    width: max(100%, 300px);
+  }
+
+  .footerContent {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 510px) {
+
+  .title-content ol {
+    display: none;
   }
 }
