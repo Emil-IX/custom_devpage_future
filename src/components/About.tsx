@@ -29,7 +29,7 @@ const About = () => {
                         <p className="experiences">Remittance systems and banking business models at the national level</p>
                     </div>
                 </div>
-                <div className="about_image">
+                <div className="about_image appearScale">
                     <img src="./recortada2.png" alt="Dev picture" />
                 </div>
             </div>

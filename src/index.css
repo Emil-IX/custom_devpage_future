@@ -371,9 +371,6 @@ body {
   width: 100%;
   height: auto;
   border: 7px solid white;
-  animation: appearright linear;
-  animation-timeline: view();
-  animation-range: entry 0 cover 40%;
 }
 
 
@@ -497,7 +494,7 @@ body {
 
 .proyects_container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 4em;
@@ -508,6 +505,8 @@ body {
 }
 
 .proyects-content {
+  margin-top: 8em;
+  margin-bottom: 5em;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -561,12 +560,6 @@ body {
 }
 
 
-@keyframes rotate {
-  to {
-    --angle: 360deg;
-  }
-}
-
 .pro_element_title {
   color: #0ab9ff;
 }
@@ -604,7 +597,9 @@ body {
   font-size: 12px;
 }
 
-
+.color-white {
+  color: white;
+}
 
 
 
@@ -683,6 +678,11 @@ footer {
   animation-timeline: view();
   animation-range: entry 0 cover 50%;
 }
+.appearleft2 {
+  animation: appearleft2 linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 50%;
+}
 
 .appearright {
   animation: appearright linear;
@@ -747,6 +747,19 @@ footer {
     opacity: 1;
     transform: translateX(0px);
     filter: blur(0);
+  }
+}
+
+@keyframes appearleft2 {
+
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
   }
 }
 
@@ -858,5 +871,11 @@ footer {
   70%,
   100% {
     width: 100%;
+  }
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
   }
 }
