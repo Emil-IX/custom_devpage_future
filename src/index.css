@@ -517,6 +517,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  /* align-items: stretch; */
   gap: 3em;
   width: 100%;
   padding: 20px 30px;
@@ -529,6 +530,7 @@ body {
 }
 
 .pro_element {
+  min-height: 250px;
   position: relative;
   width: max(30%, 300px);
   padding: 20px 30px;
@@ -576,12 +578,18 @@ body {
   color: #5d22ff;
 }
 
+
+.gitLinks img {
+  margin-left: 5px;
+  width: 15px;
+}
+
 .pro_element a::after {
   content: "";
   position: absolute;
   left: 0;
   bottom: -5px;
-  width: 100%;
+  width: min(100%,120px);
   height: 2px;
   border-bottom: 2px dashed aliceblue;
 }
@@ -717,18 +725,18 @@ footer {
 .appearleft {
   animation: appearleft linear;
   animation-timeline: view();
-  animation-range: entry 0 cover 50%;
+  animation-range: entry 0 cover 35%;
 }
 .appearleft2 {
   animation: appearleft2 linear;
   animation-timeline: view();
-  animation-range: entry 0 cover 50%;
+  animation-range: entry 0 cover 30%;
 }
 
 .appearright {
   animation: appearright linear;
   animation-timeline: view();
-  animation-range: entry 0 cover 55%;
+  animation-range: entry 0 cover 30%;
 }
 
 .clickpath {
