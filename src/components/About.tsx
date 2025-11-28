@@ -17,12 +17,13 @@ const About = () => {
                         </ol>
                     </h3>
                     <p className="about_texts_main">
-                        Hello, my name is <span>Emil H. Espiritu</span> and I am a software engineer with several years of experience in the field. I specialize in both project-oriented software development and quality analysis.
+                        Hello, my name is <span>Emil H. Espiritu</span> and I am a Software Engineer with several years of experience in the field. I specialize in both project-oriented software development and quality analysis.
                     </p>
 
                     <h3 className="ExperienceSummary">Experience summary</h3>
                     <div className="experience">
-                        <p className="experiences">I have worked on airline projects in my country with ticketing systems</p>
+                        <p className="experiences">I have worked on: </p>
+                        <p className="experiences">Airline projects in my country with ticketing systems</p>
                         <p className="experiences">In appointment dispensers for laboratories in my country</p>
                         <p className="experiences">In the country's toll payment systems</p>
                         <p className="experiences">Container delivery system and fleet for famous institutions in the country</p>

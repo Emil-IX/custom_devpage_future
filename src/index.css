@@ -1058,7 +1058,50 @@ footer {
 
 }
 
+@media (max-width: 640px) {
+
+.techContent {
+  width: 90%;
+  gap: 1.5em;
+}
+
+
+}
+
 @media (max-width: 510px) {
+
+.techContiner {
+  margin: 5em auto;
+  padding: 10em 2em;
+
+}
+  
+.techContent {
+  width: 100%;
+  gap: 1em;
+}
+
+
+  .tech_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #333333;
+  width: 90px;
+  height: 150px;
+  padding: 7px 7px;
+
+}
+
+.tech_img img {
+  width: 60px;
+}
+
+.tech_name {
+font-size: 13px;
+}
+
 
   .title-content ol {
     display: none;

@@ -48,7 +48,7 @@ export const Proyects = () => {
                 <div className="pro_element appearleft2">
                     <h3 className="pro_element_title">Mentor Clock</h3>
                     <p>
-                        An Frontend mentor challenge with its own additions to make it even more interesting.An application that shows different ways to display the time, stopwatches, clocks, timers, and a weather add-on.
+                        An Frontend mentor challenge with its own additions to make it even more interesting. An application that shows different ways to display the time, stopwatches, clocks, timers, and a weather add-on.
                     </p>
                     <a href="https://github.com/Emil-IX/Mentor-Clock" target="_blank">View in github</a>
                     <div className="pro_tags">
