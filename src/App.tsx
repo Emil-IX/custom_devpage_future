@@ -5,14 +5,14 @@ import {
   Techs, 
   Home, 
   About, 
-  Footer 
+  Footer, 
+  Proyects
 } from "./components"
 
 
 
 function App() {
 
-  Footer
 
   return (
     <>
@@ -22,6 +22,7 @@ function App() {
       <ImageSection/>
       <Techs/>
       <About/>
+      < Proyects/>
       <Footer/>
     </>
   )

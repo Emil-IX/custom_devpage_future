@@ -5,3 +5,4 @@ export { default as Techs } from './Techs';
 export { default as Home } from './Home';
 export { default as About  } from './About';
 export { Footer  } from './Footer';
+export { Proyects } from './Proyects';
