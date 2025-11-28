@@ -644,11 +644,46 @@ footer {
   display: flex;
   flex-direction: row;
   gap: 1em;
+  align-items: center;
+  justify-content: center;
 }
 
-.image img {
-  width: 50px;
-  color: rgb(255, 255, 255);
+.ink{
+  width: 35px;
+  cursor: pointer;
+}
+.git{
+  width: 48px;
+  cursor: pointer;
+
+}
+
+.medias {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3em;
+  align-items: flex-start;
+}
+
+.email {
+  display: flex;
+  gap: 5px;
+}
+
+.email input {
+  padding: 5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.email button {
+  background-color: #0ab9ff;
+  width: 60px;
+  border: none;
+  font-weight: 700;
+
+}
+
+.email button:hover {
+  background-color: #3e1bd8;
 }
 
 
