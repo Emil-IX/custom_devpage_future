@@ -630,7 +630,6 @@ body {
 
 
 
-
 /* footer */
 footer {
   display: flex;
@@ -1002,60 +1001,60 @@ footer {
   }
 
   .homeContent {
-  font-size: 8px;
-}
+    font-size: 8px;
+  }
 
-.homeContent--text {
+  .homeContent--text {
     font-size: 25px;
-}
+  }
 
-.ImageSection_texts {
-  width: 80%;
-}
+  .ImageSection_texts {
+    width: 80%;
+  }
 
-.tech_title--container {
-  width: 90%;
-}
+  .tech_title--container {
+    width: 90%;
+  }
 
 
-.tech_title {
-  font-size: 30px;
-}
+  .tech_title {
+    font-size: 30px;
+  }
 
-.tech_title--container p {
-  font-size: 13px;
-}
+  .tech_title--container p {
+    font-size: 16.5px;
+  }
 
-.aboutContainer {
-  padding: 10em 2em;
-  
-}
-  
-.aboutContainer_content {
-  width: 90%;
+  .aboutContainer {
+    padding: 10em 2em;
+
+  }
+
+  .aboutContainer_content {
+    width: 90%;
     padding: 5px 10px;
-}
+  }
 
-.about_texts {
-  display: flex;
-  flex-direction: column;
-  max-width: 90%;
-}
+  .about_texts {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+  }
 
-.proyects_container {
-   padding: 5em 1em;
-}
+  .proyects_container {
+    padding: 5em 1em;
+  }
 
-.proyects-content {
-  margin-top: 1em;
-  margin-bottom: 1em;
-   padding: 5px 5px;
-}
+  .proyects-content {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 5px 5px;
+  }
 
-.pro_element {
-  width: 90%;
+  .pro_element {
+    width: 90%;
 
-}
+  }
 
 }
 
