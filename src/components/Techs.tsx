@@ -89,7 +89,7 @@ function Techs() {
 
 
     return (
-        <div className="techContiner">
+        <div id="tech" className="techContiner">
             <div className="tech_title--container">
                 <h2 className="tech_title appearright">Tech Stack</h2>
                 <p className=" appear">

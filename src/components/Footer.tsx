@@ -3,7 +3,7 @@
 export const Footer = () => {
     return (
         <footer>
-            <div className="footerContent">
+            <div id="footer" className="footerContent">
                 <div className="textsFooter">
                     <p>Emil IXs — Full-Stack Web Developer & QA Engineer</p>
                     <p>Creating reliable, scalable, and user-focused digital solutions</p>
@@ -11,9 +11,9 @@ export const Footer = () => {
                 </div>
                 <div className="footerLinks">
                     <a href="">Home</a>
-                    <a href="">Tech</a>
-                    <a href="">About</a>
-                    <a href="">Proyects</a>
+                    <a href="#tech">Tech</a>
+                    <a href="#about">About</a>
+                    <a href="#proyects">Proyects</a>
                 </div>
                 <div className="icons">
                     <div className="image"><img src="/linkedin.svg" alt="" /></div>

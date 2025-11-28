@@ -2,10 +2,10 @@
 
 export const Proyects = () => {
     return (
-        <div className="proyects_container">
+        <div id="proyects" className="proyects_container">
 
             <div className="tech_title--container appear">
-                <h2 className="tech_title">Projects</h2>
+                <h2 className="tech_title tech_title--color">Projects</h2>
                 <p className="color-white">
                   Here are some of my projects that use the technologies used, along with their GitHub links for more details.
                 </p>
@@ -21,8 +21,8 @@ export const Proyects = () => {
                     </p>
                     <a href="https://github.com/Emil-IX/My_Album_Fullstack_app">View in github</a>
                     <div className="pro_tags">
-                        <p>Javascripts</p>
                         <p>React</p>
+                        <p>Tailwing</p>
                         <p>Node.js</p>
                         <p>Express</p>
                         <p>MongoDB</p>

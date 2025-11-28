@@ -64,6 +64,7 @@ body {
   gap: 5em;
   justify-content: center;
   background-color: #050013;
+  overflow: hidden;
 }
 
 .logo {
@@ -99,6 +100,7 @@ body {
   cursor: pointer;
   border: solid 3px rgba(255, 255, 255, 0);
   box-shadow: 3px 4px 1px rgba(51, 203, 249, 0);
+    text-decoration: none;
 
 }
 
@@ -263,6 +265,10 @@ body {
   font-family: 'Courier New', Courier, monospace;
   color: rgb(31, 5, 75);
   font-size: 40px;
+}
+
+.tech_title--color {
+  color: #0ab9ff;
 }
 
 .techContent {
@@ -538,7 +544,7 @@ body {
   inset: 0;
   padding: 5px;
   border-radius: inherit;
-  background: conic-gradient(from var(--angle), cyan, hotpink, rgb(4, 4, 131), cyan);
+  background: conic-gradient(from var(--angle), cyan, rgb(209, 6, 228), rgb(4, 4, 131), cyan);
   -webkit-mask:
     linear-gradient(#000 0 0) content-box,
     linear-gradient(#000 0 0) border-box;

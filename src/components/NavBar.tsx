@@ -1,9 +1,7 @@
-import { useNavigate } from "react-router-dom"
 
 
 const NavBar = () => {
 
-const navigate = useNavigate()
 
   return (
     <nav className="navBar">
@@ -12,11 +10,11 @@ const navigate = useNavigate()
           {/*   <img src="./dev.webp" alt="" /> */}
         </div>
         <div className="links">
-            <div className="link">Home</div>
-            <div className="link">Tech</div>
-            <div className="link">About</div>
-            <div className="link">Projets</div>
-            <div className="link">Contact</div>
+            <a href="" className="link">Home</a>
+            <a href="#tech" className="link">Tech</a>
+            <a href="#about" className="link">About</a>
+            <a href="#proyects" className="link">Projets</a>
+            <a href="#footer" className="link">Contact</a>
         </div>
     </nav>
   )
