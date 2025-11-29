@@ -4,7 +4,7 @@
 const Welcome = () => {
 
     return (
-        <div className="welcome r">
+        <div className="welcome">
             <div className="fadeout">
                 <h3 className="welcome_title appear">Hello there!</h3>
                 <p className="welcome_text">
