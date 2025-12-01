@@ -16,6 +16,7 @@ function App() {
 
   return (
     <>
+    <div className="scroll-watcher"></div>
       <Home />
       <NavBar />
       <Welcome />

@@ -20,7 +20,7 @@ export const Proyects = () => {
                     <p>
                         My Album Fullstack App is a dynamic, user-friendly platform built to allow users to upload their favorite photos and engage with the community by leaving comments.
                     </p>
-                    <a href="https://github.com/Emil-IX/My_Album_Fullstack_app" target="_blank">View in github</a>
+                    <a className="pro_element_link" href="https://github.com/Emil-IX/My_Album_Fullstack_app" target="_blank">View in github</a>
                     <div className="pro_tags">
                         <p>React</p>
                         <p>Tailwing</p>
@@ -35,7 +35,7 @@ export const Proyects = () => {
                     <p>
                         This project is an e-commerce platform with features such as listing products from a database and managing them dynamically from various endpoints, enabling full CRUD operations.
                     </p>
-                    <a href="https://github.com/Emil-IX/ITE-commerce-app" target="_blank">View in github</a>
+                    <a className="pro_element_link" href="https://github.com/Emil-IX/ITE-commerce-app" target="_blank">View in github</a>
                     <div className="pro_tags">
                         <p>Javascript</p>
                         <p>React</p>
@@ -50,7 +50,7 @@ export const Proyects = () => {
                     <p>
                         An Frontend mentor challenge with its own additions to make it even more interesting. An application that shows different ways to display the time, stopwatches, clocks, timers, and a weather add-on.
                     </p>
-                    <a href="https://github.com/Emil-IX/Mentor-Clock" target="_blank">View in github</a>
+                    <a className="pro_element_link" href="https://github.com/Emil-IX/Mentor-Clock" target="_blank">View in github</a>
                     <div className="pro_tags">
                         <p>HTML</p>
                         <p>CSS</p>
@@ -65,7 +65,7 @@ export const Proyects = () => {
                         A dynamic web application that leverages the PokeAPI to fetch, display, and manage Pokémon data in an appealing card format. Catch a glimpse of your favorite Pokémon, filter the collection, try your luck at finding Shinies.
                     </p>
                     <div className="gitLinks">
-                        <a href="https://github.com/Emil-IX/Pokemon_Api_shynidex" target="_blank">View in github</a>
+                        <a className="pro_element_link" href="https://github.com/Emil-IX/Pokemon_Api_shynidex" target="_blank">View in github</a>
                         <img src="./links.png" alt="link" onClick={()=> window.open('https://emil-ix.github.io/Pokemon_Api_shynidex/')} />
                     </div>
                     <div className="pro_tags">
