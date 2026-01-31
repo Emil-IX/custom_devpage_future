@@ -41,6 +41,10 @@ function Techs() {
             url: '/mongodb.png'
         },
         {
+            name: 'PostgreSQL',
+            url: '/postgresql.png'
+        },
+        {
             name: 'MySQL',
             url: '/mysql.png'
         },
@@ -51,6 +55,10 @@ function Techs() {
         {
             name: 'Oracle',
             url: '/oracle.webp'
+        },
+        {
+            name: 'TOAD',
+            url: '/Toad.png'
         },
         {
             name: 'Git',
@@ -71,6 +79,10 @@ function Techs() {
         {
             name: 'Playwright',
             url: '/playwright.svg'
+        },
+        {
+            name: 'Cypress',
+            url: '/cypress.jpg'
         },
         {
             name: 'Jest',
